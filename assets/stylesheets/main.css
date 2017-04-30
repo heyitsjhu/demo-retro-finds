@@ -34,11 +34,6 @@ h6 {
 @media screen and (max-width: 768px) {
   body {
     font-size: 16px; } }
-.container {
-  margin: 0 auto;
-  padding: 0 40px;
-  max-width: 1200px; }
-
 .footer {
   background-color: #192a40; }
 
@@ -106,5 +101,9 @@ h6 {
 
   .copyright__text {
     font-size: 0.875em; } }
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1200px; }
 
 /*# sourceMappingURL=main.css.map */
