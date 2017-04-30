@@ -1,0 +1,3 @@
+// Ignore all SCSS -> CSS map and cache files
+.sass-cache
+*.css.map
