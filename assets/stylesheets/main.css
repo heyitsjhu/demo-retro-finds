@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:200,700|Mr+Dafoe");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,500|Mr+Dafoe");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 body {
-  background-color: #6fcbce;
   font: 200 18px/1.2 "Montserrat", sans-serif;
   color: white;
   letter-spacing: 0.5px; }
@@ -105,5 +104,125 @@ h6 {
   margin: 0 auto;
   padding: 0 40px;
   max-width: 1200px; }
+
+.widgets {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px; }
+
+.widget {
+  padding: 0 20px;
+  border: 2px solid #6fcbce;
+  color: #333333;
+  width: 32%; }
+
+.widget__heading {
+  padding: 10px 0;
+  color: #333333; }
+
+.reviews-widget {
+  position: relative; }
+
+.event {
+  margin-bottom: 20px; }
+
+.event__date {
+  font-weight: 500; }
+
+.review {
+  margin-bottom: 10px;
+  overflow: auto; }
+
+.customer__review {
+  margin-bottom: 10px; }
+
+.customer__name {
+  float: right; }
+
+.review__yelp {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 45px; }
+
+.review__yelp-button {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-top: 2px solid #6fcbce;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 200;
+  text-align: center;
+  line-height: 45px; }
+  .review__yelp-button:hover {
+    cursor: pointer;
+    background-color: #6fcbce;
+    color: white; }
+  .review__yelp-button:focus {
+    outline: none; }
+
+.review__yelp-img {
+  position: relative;
+  top: 5px;
+  height: 70%; }
+
+.subscription__text {
+  margin-bottom: 10px; }
+
+.subscription__form {
+  width: 100%;
+  overflow: auto; }
+
+.subscription__field {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  font-family: inherit;
+  font-size: 0.875em;
+  font-weight: 200; }
+  .subscription__field:focus {
+    border-color: #6fcbce;
+    outline: none; }
+
+.subscription__button {
+  float: right;
+  margin-bottom: 10px;
+  padding: 10px 17px;
+  background-color: #6fcbce;
+  border: 0;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 0.875em;
+  color: white;
+  letter-spacing: 0.5px; }
+  .subscription__button:focus {
+    outline: none; }
+  .subscription__button:hover {
+    cursor: pointer; }
+
+@media screen and (max-width: 970px) {
+  .widgets {
+    flex-direction: column;
+    align-items: center; }
+
+  .widget {
+    margin-bottom: 40px;
+    width: 80%; }
+
+  .review__yelp {
+    position: inherit;
+    left: auto;
+    bottom: auto;
+    margin-left: -20px;
+    margin-right: -20px;
+    transform: translateX(0);
+    width: auto; } }
 
 /*# sourceMappingURL=main.css.map */
