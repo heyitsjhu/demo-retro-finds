@@ -299,5 +299,104 @@ button:focus {
 @media screen and (max-width: 425px) {
   .shop-by-brand {
     display: none; } }
+.latest-finds {
+  margin-bottom: 40px;
+  color: #333333; }
+
+.latest-finds__heading {
+  margin-bottom: 20px; }
+
+.latest-finds__content {
+  display: flex;
+  justify-content: space-between; }
+
+.latest-finds__grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%; }
+
+.latest-finds__grid-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  min-width: 50%;
+  max-width: 50%; }
+
+.latest-finds__item-image {
+  margin-right: 20px; }
+
+.latest-finds__item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px; }
+  .latest-finds__item-details a,
+  .latest-finds__item-details a:visited,
+  .latest-finds__item-details a:active {
+    color: #333333;
+    text-decoration: none;
+    text-align: center; }
+  .latest-finds__item-details a:hover {
+    color: #6fcbce;
+    text-decoration: underline; }
+
+.latest-finds__item-brand {
+  text-transform: uppercase;
+  font-weight: 500; }
+
+.latest-finds__item-price {
+  font-weight: 500; }
+
+.latest-finds__button {
+  padding: 10px;
+  width: 100%;
+  background-color: #6fcbce;
+  border: 0;
+  font-size: inherit;
+  color: white; }
+  .latest-finds__button:hover {
+    cursor: pointer;
+    outline: none; }
+
+.sidebar__ad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+@media screen and (max-width: 1024px) {
+  .latest-finds__grid {
+    width: 75%; } }
+@media screen and (max-width: 900px) {
+  .latest-finds__grid {
+    width: 100%; }
+
+  .sidebar__ad {
+    display: none; } }
+@media screen and (max-width: 768px) {
+  .latest-finds__item-image {
+    max-width: 63.95348%; }
+
+  .latest-finds__item-details {
+    width: auto; } }
+@media screen and (max-width: 670px) {
+  .latest-finds__grid {
+    flex-direction: column; }
+
+  .latest-finds__grid-item {
+    min-width: 100%; }
+
+  .latest-finds__item-image {
+    max-width: 100%; }
+
+  .latest-finds__item-details {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; } }
+@media screen and (max-width: 425px) {
+  .latest-finds__item-details {
+    flex-direction: column; } }
+@media screen and (max-width: 375px) {
+  .latest-finds__item-image {
+    max-width: 65.6716%; } }
 
 /*# sourceMappingURL=main.css.map */
