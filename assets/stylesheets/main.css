@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,700|Mr+Dafoe");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #6fcbce;
+  font: 200 18px/1.2 "Montserrat", sans-serif;
+  color: white;
+  letter-spacing: 0.5px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Mr Dafoe", cursive; }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.17em; }
+
+h5 {
+  font-size: 1.12em; }
+
+h6 {
+  font-size: 0.87em; }
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px; } }
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1200px; }
+
+.footer {
+  background-color: #192a40; }
+
+.footer__content {
+  display: flex;
+  justify-content: space-between; }
+
+.footer__section {
+  padding-bottom: 20px;
+  width: 33%;
+  text-align: center; }
+
+.footer__heading {
+  padding: 20px 0;
+  letter-spacing: 1.5px; }
+
+.footer__list {
+  list-style: none; }
+
+.footer__list-item a {
+  color: white;
+  text-decoration: none; }
+  .footer__list-item a:hover {
+    color: #6fcbce; }
+
+.footer__contact-email a {
+  color: #6fcbce;
+  text-decoration: none; }
+  .footer__contact-email a:hover {
+    text-decoration: underline; }
+
+.social-media {
+  display: inline-block;
+  margin: 20px auto 0; }
+
+.social-media__list {
+  display: flex;
+  list-style: none; }
+
+.social-media__item {
+  margin-right: 16px; }
+  .social-media__item:last-child {
+    margin-right: 0; }
+  .social-media__item i.fa {
+    color: #6fcbce; }
+    .social-media__item i.fa:hover {
+      color: white;
+      cursor: pointer; }
+
+.copyright {
+  padding-bottom: 20px;
+  text-align: center; }
+
+@media screen and (max-width: 660px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center; }
+
+  .footer__section {
+    border-bottom: 1px solid white; }
+
+  .copyright {
+    padding-top: 20px; } }
+
+/*# sourceMappingURL=main.css.map */

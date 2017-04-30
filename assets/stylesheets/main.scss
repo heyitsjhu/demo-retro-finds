@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,700|Mr+Dafoe');
+
+$base-font-family:    "Montserrat", sans-serif;
+$base-font-size:      18px;
+$base-font-weight:    200;
+$heading-font-family: "Mr Dafoe", cursive;
+$heading-font-weight: 400;
+$base-line-height:    1.2;
+$base-letter-spacing: 0.5px;
+
+$spacing-unit:        40px;
+
+$brand-color:         rgb(111, 203, 206);
+$brand-color-dark:    rgb(25, 42, 64);
+$text-color-dark:     rgb(51, 51, 51);
+$text-color-light:    rgb(255, 255, 255);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $brand-color;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color-light;
+  letter-spacing: $base-letter-spacing;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: $heading-font-family; }
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.17em; }
+h5 { font-size: 1.12em; }
+h6 { font-size: 0.87em; }
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: $base-font-size * 0.888889;
+  }
+}
+
+// CONTAINERS
+.container {
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+  max-width: 1200px;
+}
+
+.footer {
+  background-color: $brand-color-dark;
+}
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+  }
+    .footer__section {
+      padding-bottom: $spacing-unit / 2;
+      width: 33%;
+      text-align: center;
+    }
+      .footer__heading {
+        padding: ($spacing-unit / 2) 0;
+        letter-spacing: 1.5px;
+      }
+      .footer__list {
+        list-style: none;
+      }
+        .footer__list-item a {
+          color: $text-color-light;
+          text-decoration: none;
+          &:hover {
+            color: $brand-color;
+          }
+        }
+      .footer__contact-email a {
+        color: $brand-color;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    .social-media {
+      display: inline-block;
+      margin: 20px auto 0;
+    }
+      .social-media__list {
+        display: flex;
+        list-style: none;
+      }
+        .social-media__item {
+          margin-right: 16px;
+          &:last-child {
+            margin-right: 0;
+          }
+          i.fa {
+            color: $brand-color;
+            &:hover {
+              color: $text-color-light;
+              cursor: pointer;
+            }
+          }
+        }
+    .copyright {
+      padding-bottom: $spacing-unit / 2;
+      text-align: center;
+    }
+
+@media screen and (max-width: 660px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__section {
+    border-bottom: 1px solid $text-color-light;
+  }
+  .copyright {
+    padding-top: $spacing-unit / 2;
+  }
+}
