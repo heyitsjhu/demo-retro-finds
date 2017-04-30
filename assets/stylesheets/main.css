@@ -10,7 +10,8 @@ body {
   letter-spacing: 0.5px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Mr Dafoe", cursive; }
+  font-family: "Mr Dafoe", cursive;
+  color: #333333; }
 
 h1 {
   font-size: 2.5em; }
@@ -19,7 +20,8 @@ h2 {
   font-size: 2em; }
 
 h3 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  color: white; }
 
 h4 {
   font-size: 1.17em; }
@@ -30,9 +32,20 @@ h5 {
 h6 {
   font-size: 0.87em; }
 
+button:focus {
+  outline: none; }
+
 @media screen and (max-width: 768px) {
   body {
     font-size: 16px; } }
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  max-width: 1200px; }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 20px; } }
 .footer {
   background-color: #192a40; }
 
@@ -100,11 +113,6 @@ h6 {
 
   .copyright__text {
     font-size: 0.875em; } }
-.container {
-  margin: 0 auto;
-  padding: 0 40px;
-  max-width: 1200px; }
-
 .widgets {
   display: flex;
   justify-content: space-between;
@@ -214,7 +222,7 @@ h6 {
 
   .widget {
     margin-bottom: 40px;
-    width: 80%; }
+    width: 100%; }
 
   .review__yelp {
     position: inherit;
@@ -224,5 +232,72 @@ h6 {
     margin-right: -20px;
     transform: translateX(0);
     width: auto; } }
+.shop-by-brand {
+  color: #333333; }
+
+.shop-by-brand__heading {
+  margin-bottom: 20px; }
+
+.shop-by-brand__content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+  overflow-x: hidden; }
+
+.shop-by-brand__button, .shop-by-brand__button-left, .shop-by-brand__button-right {
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  border: 0;
+  background-color: #6fcbce;
+  font-size: 3em;
+  color: white; }
+
+.shop-by-brand__button-left {
+  left: 0;
+  background-color: #bbe6e8;
+  cursor: not-allowed; }
+
+.shop-by-brand__button-right {
+  right: 0;
+  cursor: pointer; }
+
+.shop-by-brand__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  width: 100%;
+  list-style: none; }
+
+.shop-by-brand__list-item {
+  padding: 0 20px; }
+
+@media screen and (max-width: 970px) {
+  .shop-by-brand {
+    margin: 0 auto; }
+
+  .shop-by-brand__button, .shop-by-brand__button-left, .shop-by-brand__button-right {
+    width: 50px;
+    font-size: 2.5em; }
+
+  .shop-by-brand__list {
+    padding: 10px 50px; } }
+@media screen and (max-width: 630px) {
+  .shop-by-brand__button, .shop-by-brand__button-left, .shop-by-brand__button-right {
+    display: none; }
+
+  .shop-by-brand__list {
+    flex-wrap: wrap;
+    padding: 0; }
+
+  .shop-by-brand__list-item {
+    margin-bottom: 10px; } }
+@media screen and (max-width: 425px) {
+  .shop-by-brand {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

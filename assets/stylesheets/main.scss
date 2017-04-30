@@ -9,9 +9,10 @@ $base-line-height:    1.2;
 $base-letter-spacing: 0.5px;
 
 $spacing-unit:        40px;
-$radius-size:       5px;
+$radius-size:         5px;
 
 $brand-color:         rgb(111, 203, 206);
+$brand-color-light:   lighten($brand-color, 20%);
 $brand-color-dark:    rgb(25, 42, 64);
 $text-color-dark:     rgb(51, 51, 51);
 $text-color-light:    rgb(255, 255, 255);
@@ -29,21 +30,26 @@ body {
   letter-spacing: $base-letter-spacing;
 }
 
-h1, h2, h3, h4, h5, h6 { font-family: $heading-font-family; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  color: $text-color-dark;
+}
 h1 { font-size: 2.5em; }
 h2 { font-size: 2em; }
-h3 { font-size: 1.5em; }
+h3 { font-size: 1.5em; color: $text-color-light}
 h4 { font-size: 1.17em; }
 h5 { font-size: 1.12em; }
 h6 { font-size: 0.87em; }
+
+button:focus {
+  outline: none;
+}
 
 @media screen and (max-width: 768px) {
   body {
     font-size: $base-font-size * 0.888889;
   }
 }
-
-@import 'partials/_footer';
 
 // CONTAINERS
 .container {
@@ -52,131 +58,90 @@ h6 { font-size: 0.87em; }
   max-width: 1200px;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 0 $spacing-unit / 2;
+  }
+}
 
-.widgets {
+@import 'partials/_footer';
+@import 'partials/_widgets';
+
+.shop-by-brand {
+  color: $text-color-dark;
+}
+.shop-by-brand__heading {
+  margin-bottom: $spacing-unit / 2;
+}
+.shop-by-brand__content {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  width: 100%;
   margin-bottom: $spacing-unit;
+  overflow-x: hidden;
 }
-  .widget {
-    padding: 0 ($spacing-unit / 2);
-    border: 2px solid $brand-color;
-    color: $text-color-dark;
-    width: 32%;
+  .shop-by-brand__button {
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    border: 0;
+    background-color: $brand-color;
+    font-size: 3em;
+    color: $text-color-light;
   }
-    .widget__heading {
-      padding: ($spacing-unit / 4) 0;
-      color: $text-color-dark;
+    .shop-by-brand__button-left {
+      @extend .shop-by-brand__button;
+      left: 0;
+      background-color: $brand-color-light;
+      cursor: not-allowed;
     }
-    .reviews-widget{
-      position: relative;
+    .shop-by-brand__button-right {
+      @extend .shop-by-brand__button;
+      right: 0;
+      cursor: pointer;
     }
-      .event {
-        margin-bottom: $spacing-unit / 2;
-      }
-        .event__date {
-          font-weight: 500;
-        }
-      .review {
-        margin-bottom: $spacing-unit / 4;
-        overflow: auto;
-      }
-        .customer__review {
-          margin-bottom: 10px;
-        }
-        .customer__name {
-          float: right;
-        }
-      .review__yelp {
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
-        width: 100%;
-        height: 45px;
-      }
-      .review__yelp-button {
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
-        border: 0;
-        border-top: 2px solid $brand-color;
-        font-family: inherit;
-        font-size: inherit;
-        font-weight: 200;
-        text-align: center;
-        line-height: 45px;
-        &:hover {
-          cursor: pointer;
-          background-color: $brand-color;
-          color: $text-color-light;
-        }
-        &:focus {
-          outline: none;
-        }
-      }
-      .review__yelp-img {
-        position: relative;
-        top: 5px;
-        height: 70%;
-      }
-      .subscription__text {
-        margin-bottom: $spacing-unit / 4;
-      }
-      .subscription__form {
-        width: 100%;
-        overflow: auto;
-      }
-        .subscription__field {
-          margin-bottom: $spacing-unit / 4;
-          padding: $spacing-unit / 4;
-          width: 100%;
-          height: 35px;
-          border-radius: $radius-size;
-          border: 2px solid #ddd;
-          font-family: inherit;
-          font-size: 0.875em;
-          font-weight: 200;
-          &:focus {
-            border-color: $brand-color;
-            outline: none;
-          }
-        }
-        .subscription__button {
-          float: right;
-          margin-bottom: $spacing-unit / 4;
-          padding: 10px 17px;
-          background-color: $brand-color;
-          border: 0;
-          border-radius: $radius-size;
-          font-family: inherit;
-          font-size: 0.875em;
-          color: $text-color-light;
-          letter-spacing: 0.5px;
-          &:focus {
-            outline: none;
-          }
-          &:hover {
-            cursor: pointer;
-          }
-        }
+  .shop-by-brand__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: ($spacing-unit / 2) 60px;
+    width: 100%;
+    list-style: none;
+  }
+    .shop-by-brand__list-item {
+      padding: 0 ($spacing-unit / 2);
+    }
 
 @media screen and (max-width: 970px) {
-  .widgets {
-    flex-direction: column;
-    align-items: center;
+  .shop-by-brand {
+    margin: 0 auto;
   }
-    .widget {
-      margin-bottom: $spacing-unit;
-      width: 80%;
-    }
-    .review__yelp {
-        position: inherit;
-        left: auto;
-        bottom: auto;
-        margin-left: -($spacing-unit / 2);
-        margin-right: -($spacing-unit / 2);
-        transform: translateX(0);
-        width: auto;
-    }
+  .shop-by-brand__button {
+    width: 50px;
+    font-size: 2.5em;
+  }
+  .shop-by-brand__list {
+    padding: ($spacing-unit / 4) 50px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .shop-by-brand__button {
+    display: none;
+  }
+  .shop-by-brand__list {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .shop-by-brand__list-item {
+    margin-bottom: $spacing-unit / 4;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .shop-by-brand {
+    display: none;
+  }
 }
