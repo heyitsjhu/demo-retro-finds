@@ -114,9 +114,13 @@ h6 { font-size: 0.87em; }
     align-items: center;
   }
   .footer__section {
+    width: 100%;
     border-bottom: 1px solid $text-color-light;
   }
   .copyright {
     padding-top: $spacing-unit / 2;
   }
+    .copyright__text {
+      font-size: 0.875em;
+    }
 }

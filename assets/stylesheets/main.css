@@ -98,9 +98,13 @@ h6 {
     align-items: center; }
 
   .footer__section {
+    width: 100%;
     border-bottom: 1px solid white; }
 
   .copyright {
-    padding-top: 20px; } }
+    padding-top: 20px; }
+
+  .copyright__text {
+    font-size: 0.875em; } }
 
 /*# sourceMappingURL=main.css.map */
