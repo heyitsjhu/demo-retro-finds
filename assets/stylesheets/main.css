@@ -32,6 +32,10 @@ h5 {
 h6 {
   font-size: 0.87em; }
 
+fieldset {
+  width: 100%;
+  border: none; }
+
 button:focus {
   outline: none; }
 
@@ -366,7 +370,7 @@ button:focus {
 @media screen and (max-width: 1024px) {
   .latest-finds__grid {
     width: 75%; } }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 990px) {
   .latest-finds__grid {
     width: 100%; }
 
@@ -398,5 +402,150 @@ button:focus {
 @media screen and (max-width: 375px) {
   .latest-finds__item-image {
     max-width: 65.6716%; } }
+.hero {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: #192a40;
+  background-image: url("../images/duraflex-bg-image.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+  background-attachment: fixed;
+  overflow: hidden; }
+
+.sweepstakes {
+  margin-left: 160px;
+  padding: 40px 0;
+  width: 35%; }
+
+.sweepstakes__headline {
+  position: relative;
+  top: 10px;
+  left: 5px;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 2em;
+  letter-spacing: 1px; }
+
+.sweepstakes__heading {
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  color: white; }
+
+.sweepstakes__form {
+  margin-bottom: 20px; }
+
+.sweepstakes__form-input {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  font-size: inherit;
+  font-weight: 200; }
+  .sweepstakes__form-input:focus {
+    outline: none;
+    border-color: #6fcbce; }
+
+.sweepstakes__form-name {
+  display: flex;
+  justify-content: space-between; }
+
+.first-name-field,
+.last-name-field {
+  width: 49%; }
+
+.email-field {
+  width: 100%; }
+
+.sweepstakes__form-button {
+  padding: 20px;
+  width: 100%;
+  background-color: #6fcbce;
+  border: 0;
+  border-radius: 5px;
+  font-size: 1.25em;
+  font-weight: 500;
+  color: white; }
+  .sweepstakes__form-button:hover {
+    cursor: pointer;
+    outline: none; }
+
+.sweepstakes__disclaimer {
+  margin-bottom: 40px;
+  font-size: 0.875em;
+  font-style: italic; }
+  .sweepstakes__disclaimer a {
+    color: inherit; }
+  .sweepstakes__disclaimer a:hover {
+    color: #6fcbce; }
+
+@media screen and (max-width: 1700px) {
+  .hero {
+    background-size: 125%;
+    background-attachment: fixed; } }
+@media screen and (max-width: 1440px) {
+  .hero {
+    background-position: left center;
+    background-size: 160%; } }
+@media screen and (max-width: 1290px) {
+  .sweepstakes {
+    width: 45%; } }
+@media screen and (max-width: 1024px) {
+  .hero {
+    background-position: left top;
+    background-size: 160%; }
+
+  .sweepstakes {
+    margin-left: 40px;
+    padding: 20px 0;
+    width: 55%; } }
+@media screen and (max-width: 960px) {
+  .hero {
+    background-size: 160%; }
+
+  .sweepstakes__headline {
+    top: 5px;
+    font-size: 1.25em; }
+
+  .sweepstakes__heading {
+    margin-bottom: 10px;
+    font-size: 2em; }
+
+  .sweepstakes__form-input {
+    margin-bottom: 10px;
+    padding: 10px; }
+
+  .sweepstakes__form-button {
+    padding: 10px;
+    font-size: 1em; }
+
+  .sweepstakes__disclaimer {
+    margin-bottom: 20px;
+    font-size: 0.75em; } }
+@media screen and (max-width: 768px) {
+  .sweepstakes {
+    width: 60%; } }
+@media screen and (max-width: 640px) {
+  .hero {
+    background-image: none; }
+
+  .sweepstakes {
+    margin-right: 40px;
+    width: 100%; }
+
+  .sweepstakes__disclaimer {
+    margin-bottom: 0;
+    font-size: 0.75em; } }
+@media screen and (max-width: 425px) {
+  .sweepstakes {
+    margin: 0 10px; }
+
+  .sweepstakes__form-name {
+    flex-direction: column; }
+
+  .first-name-field,
+  .last-name-field {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
