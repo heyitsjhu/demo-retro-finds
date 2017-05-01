@@ -765,6 +765,21 @@ button:focus {
       color: white;
       cursor: pointer; }
 
+.developer {
+  margin-bottom: 40px;
+  padding: 20px 0;
+  border-top: 1px solid #fafafa;
+  border-bottom: 1px solid #fafafa;
+  font-size: 0.875em;
+  text-align: center; }
+
+.developer__note {
+  padding-bottom: 5px; }
+  .developer__note a {
+    color: inherit; }
+  .developer__note a:hover {
+    color: #6fcbce; }
+
 .copyright {
   padding-bottom: 20px;
   text-align: center; }
