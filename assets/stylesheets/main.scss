@@ -41,23 +41,17 @@ h4 { font-size: 1.17em; }
 h5 { font-size: 1.12em; }
 h6 { font-size: 0.87em; }
 
-ul {
-  list-style: none;
-}
+ul { list-style: none; }
 
 fieldset {
   width: 100%;
   border: none;
 }
 
-button:focus {
-  outline: none;
-}
+button:focus { outline: none; }
 
 @media screen and (max-width: 768px) {
-  body {
-    font-size: $base-font-size * 0.888889;
-  }
+  body { font-size: $base-font-size * 0.888889; }
 }
 
 // CONTAINERS
@@ -68,14 +62,12 @@ button:focus {
 }
 
 @media screen and (max-width: 600px) {
-  .container {
-    padding: 0 $spacing-unit / 2;
-  }
+  .container { padding: 0 $spacing-unit / 2; }
 }
 
-@import 'partials/_footer';
-@import 'partials/_widgets';
-@import 'partials/_shop-by-brand';
-@import 'partials/_latest-finds';
-@import 'partials/_hero';
 @import 'partials/_header';
+@import 'partials/_hero';
+@import 'partials/_latest-finds';
+@import 'partials/_shop-by-brand';
+@import 'partials/_widgets';
+@import 'partials/_footer';

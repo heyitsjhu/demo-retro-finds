@@ -1,6 +1,4 @@
-.footer {
-  background-color: $brand-color-dark;
-}
+.footer { background-color: $brand-color-dark; }
   .footer__content {
     display: flex;
     justify-content: space-between;
@@ -14,22 +12,15 @@
         padding: ($spacing-unit / 2) 0;
         letter-spacing: 1.5px;
       }
-      .footer__list {
-        list-style: none;
+      .footer__list-item a {
+        color: $text-color-light;
+        text-decoration: none;
+        &:hover { color: $brand-color; }
       }
-        .footer__list-item a {
-          color: $text-color-light;
-          text-decoration: none;
-          &:hover {
-            color: $brand-color;
-          }
-        }
       .footer__contact-email a {
         color: $brand-color;
         text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
+        &:hover { text-decoration: underline; }
       }
     .social-media {
       display: inline-block;
@@ -41,9 +32,7 @@
       }
         .social-media__item {
           margin-right: 16px;
-          &:last-child {
-            margin-right: 0;
-          }
+          &:last-child { margin-right: 0; }
           i.fa {
             color: $brand-color;
             &:hover {
@@ -66,10 +55,6 @@
     width: 100%;
     border-bottom: 1px solid $text-color-light;
   }
-  .copyright {
-    padding-top: $spacing-unit / 2;
-  }
-    .copyright__text {
-      font-size: 0.875em;
-    }
+  .copyright { padding-top: $spacing-unit / 2; }
+    .copyright__text { font-size: 0.875em; }
 }

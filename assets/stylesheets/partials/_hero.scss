@@ -30,9 +30,7 @@
     font-size: 3em;
     color: $text-color-light;
   }
-  .sweepstakes__form {
-    margin-bottom: $spacing-unit / 2;
-  }
+  .sweepstakes__form { margin-bottom: $spacing-unit / 2; }
     .sweepstakes__form-input {
       margin-bottom: $spacing-unit / 2;
       padding: $spacing-unit / 2;
@@ -50,12 +48,8 @@
       justify-content: space-between;
     }
     .first-name-field,
-    .last-name-field {
-      width: 49%;
-    }
-    .email-field {
-      width: 100%;
-    }
+    .last-name-field { width: 49%; }
+    .email-field { width: 100%; }
     .sweepstakes__form-button {
       padding: $spacing-unit / 2;
       width: 100%;
@@ -93,9 +87,7 @@
 }
 
 @media screen and (max-width: 1290px) {
-  .sweepstakes {
-    width: 45%;
-  }
+  .sweepstakes { width: 45%; }
 }
 
 @media screen and (max-width: 1024px) {
@@ -111,9 +103,7 @@
 }
 
 @media screen and (max-width: 960px) {
-  .hero {
-    background-size: 160%;
-  }
+  .hero { background-size: 160%; }
   .sweepstakes__headline {
     top: 5px;
     font-size: 1.25em;
@@ -137,15 +127,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .sweepstakes {
-    width: 60%;
-  }
+  .sweepstakes { width: 60%; }
 }
 
 @media screen and (max-width: 640px) {
-    .hero {
-      background-image: none;
-    }
+    .hero { background-image: none; }
     .sweepstakes {
       margin-right: $spacing-unit;
       width: 100%;
@@ -157,14 +143,8 @@
 }
 
 @media screen and (max-width: 425px) {
-  .sweepstakes {
-    margin: 0 $spacing-unit / 4;
-  }
-  .sweepstakes__form-name {
-    flex-direction: column;
-  }
+  .sweepstakes { margin: 0 $spacing-unit / 4; }
+  .sweepstakes__form-name { flex-direction: column; }
   .first-name-field,
-  .last-name-field {
-    width: 100%
-  }
+  .last-name-field { width: 100% }
 }

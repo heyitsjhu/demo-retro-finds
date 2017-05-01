@@ -13,25 +13,15 @@
       padding: ($spacing-unit / 4) 0;
       color: $text-color-dark;
     }
-    .reviews-widget{
-      position: relative;
-    }
-      .event {
-        margin-bottom: $spacing-unit / 2;
-      }
-        .event__date {
-          font-weight: 500;
-        }
+    .reviews-widget{ position: relative; }
+      .event { margin-bottom: $spacing-unit / 2; }
+        .event__date { font-weight: 500; }
       .review {
         margin-bottom: $spacing-unit / 4;
         overflow: auto;
       }
-        .customer__review {
-          margin-bottom: 10px;
-        }
-        .customer__name {
-          float: right;
-        }
+        .customer__review { margin-bottom: 10px; }
+        .customer__name { float: right; }
       .review__yelp {
         position: absolute;
         left: 50%;
@@ -40,34 +30,29 @@
         width: 100%;
         height: 45px;
       }
-      .review__yelp-button {
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
-        border: 0;
-        border-top: 2px solid $brand-color;
-        font-family: inherit;
-        font-size: inherit;
-        font-weight: 200;
-        text-align: center;
-        line-height: 45px;
-        &:hover {
-          cursor: pointer;
-          background-color: $brand-color;
-          color: $text-color-light;
+        .review__yelp-button {
+          background-color: transparent;
+          width: 100%;
+          height: 100%;
+          border: 0;
+          border-top: 2px solid $brand-color;
+          font-family: inherit;
+          font-size: inherit;
+          font-weight: 200;
+          text-align: center;
+          line-height: 45px;
+          &:hover {
+            cursor: pointer;
+            background-color: $brand-color;
+            color: $text-color-light;
+          }
         }
-        &:focus {
-          outline: none;
+        .review__yelp-img {
+          position: relative;
+          top: 5px;
+          height: 70%;
         }
-      }
-      .review__yelp-img {
-        position: relative;
-        top: 5px;
-        height: 70%;
-      }
-      .subscription__text {
-        margin-bottom: $spacing-unit / 4;
-      }
+      .subscription__text { margin-bottom: $spacing-unit / 4; }
       .subscription__form {
         width: 100%;
         overflow: auto;
@@ -98,12 +83,8 @@
           font-size: 0.875em;
           color: $text-color-light;
           letter-spacing: 0.5px;
-          &:focus {
-            outline: none;
-          }
-          &:hover {
-            cursor: pointer;
-          }
+          &:focus { outline: none; }
+          &:hover { cursor: pointer; }
         }
 
 @media screen and (max-width: 970px) {
