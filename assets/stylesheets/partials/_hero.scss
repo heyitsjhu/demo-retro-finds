@@ -54,14 +54,20 @@
       padding: $spacing-unit / 2;
       width: 100%;
       background-color: $brand-color;
-      border: 0;
+      border: 4px solid transparent;
       border-radius: $radius-size;
       font-size: 1.25em;
       font-weight: 500;
       color: $text-color-light;
       &:hover {
+        background-color: inherit;
+        border-color: $brand-color;
+        color: $brand-color;
         cursor: pointer;
-        outline: none;
+      }
+      &:active {
+        background-color: $brand-color;
+        color: $text-color-light;
       }
     }
   .sweepstakes__disclaimer {

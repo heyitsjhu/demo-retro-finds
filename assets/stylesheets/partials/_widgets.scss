@@ -77,14 +77,23 @@
           margin-bottom: $spacing-unit / 4;
           padding: 10px 17px;
           background-color: $brand-color;
-          border: 0;
+          border: 2px solid transparent;
           border-radius: $radius-size;
           font-family: inherit;
           font-size: 0.875em;
           color: $text-color-light;
           letter-spacing: 0.5px;
           &:focus { outline: none; }
-          &:hover { cursor: pointer; }
+          &:hover {
+            background-color: inherit;
+            border-color: $brand-color;
+            color: $brand-color;
+            cursor: pointer;
+          }
+          &:active {
+            background-color: $brand-color;
+            color: $text-color-light;
+          }
         }
 
 @media screen and (max-width: 970px) {

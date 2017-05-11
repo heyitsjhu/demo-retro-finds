@@ -352,14 +352,19 @@ button:focus {
   padding: 20px;
   width: 100%;
   background-color: #6fcbce;
-  border: 0;
+  border: 4px solid transparent;
   border-radius: 5px;
   font-size: 1.25em;
   font-weight: 500;
   color: white; }
   .sweepstakes__form-button:hover {
-    cursor: pointer;
-    outline: none; }
+    background-color: inherit;
+    border-color: #6fcbce;
+    color: #6fcbce;
+    cursor: pointer; }
+  .sweepstakes__form-button:active {
+    background-color: #6fcbce;
+    color: white; }
 
 .sweepstakes__disclaimer {
   margin-bottom: 40px;
@@ -471,11 +476,17 @@ button:focus {
   padding: 10px;
   width: 100%;
   background-color: #6fcbce;
-  border: 0;
+  border: 2px solid transparent;
   font-size: inherit;
   color: white; }
   .latest-finds__button:hover {
+    background-color: inherit;
+    border-color: #6fcbce;
+    color: #6fcbce;
     cursor: pointer; }
+  .latest-finds__button:active {
+    background-color: #6fcbce;
+    color: white; }
 
 .sidebar__ad {
   display: flex;
@@ -536,7 +547,7 @@ button:focus {
   top: 0;
   width: 60px;
   height: 100%;
-  border: 0;
+  border: 2px solid transparent;
   background-color: #6fcbce;
   font-size: 3em;
   color: white; }
@@ -547,8 +558,15 @@ button:focus {
   cursor: not-allowed; }
 
 .shop-by-brand__button-right {
-  right: 0;
-  cursor: pointer; }
+  right: 0; }
+  .shop-by-brand__button-right:hover {
+    background-color: inherit;
+    border-color: #6fcbce;
+    color: #6fcbce;
+    cursor: pointer; }
+  .shop-by-brand__button-right:active {
+    background-color: #6fcbce;
+    color: white; }
 
 .shop-by-brand__list {
   display: flex;
@@ -673,7 +691,7 @@ button:focus {
   margin-bottom: 10px;
   padding: 10px 17px;
   background-color: #6fcbce;
-  border: 0;
+  border: 2px solid transparent;
   border-radius: 5px;
   font-family: inherit;
   font-size: 0.875em;
@@ -682,7 +700,13 @@ button:focus {
   .subscription__button:focus {
     outline: none; }
   .subscription__button:hover {
+    background-color: inherit;
+    border-color: #6fcbce;
+    color: #6fcbce;
     cursor: pointer; }
+  .subscription__button:active {
+    background-color: #6fcbce;
+    color: white; }
 
 @media screen and (max-width: 970px) {
   .widgets {

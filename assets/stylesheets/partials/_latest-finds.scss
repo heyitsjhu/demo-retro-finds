@@ -47,10 +47,19 @@
         padding: $spacing-unit / 4;
         width: 100%;
         background-color: $brand-color;
-        border: 0;
+        border: 2px solid transparent;
         font-size: inherit;
         color: $text-color-light;
-        &:hover { cursor: pointer; }
+        &:hover {
+          background-color: inherit;
+          border-color: $brand-color;
+          color: $brand-color;
+          cursor: pointer;
+        }
+        &:active {
+          background-color: $brand-color;
+          color: $text-color-light;
+        }
       }
 
     .sidebar__ad {
