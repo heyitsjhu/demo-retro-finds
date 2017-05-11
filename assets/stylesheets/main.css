@@ -299,8 +299,8 @@ button:focus {
   background-color: #192a40;
   background-image: url("../images/duraflex-bg-image.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center top;
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   overflow: hidden; }
 
@@ -370,30 +370,15 @@ button:focus {
   .sweepstakes__disclaimer a:hover {
     color: #6fcbce; }
 
-@media screen and (max-width: 1700px) {
-  .hero {
-    background-size: 125%;
-    background-attachment: fixed; } }
-@media screen and (max-width: 1440px) {
-  .hero {
-    background-position: left center;
-    background-size: 160%; } }
 @media screen and (max-width: 1290px) {
   .sweepstakes {
     width: 45%; } }
 @media screen and (max-width: 1024px) {
-  .hero {
-    background-position: left top;
-    background-size: 160%; }
-
   .sweepstakes {
     margin-left: 40px;
     padding: 20px 0;
     width: 55%; } }
 @media screen and (max-width: 960px) {
-  .hero {
-    background-size: 160%; }
-
   .sweepstakes__headline {
     top: 5px;
     font-size: 1.25em; }
@@ -417,9 +402,6 @@ button:focus {
   .sweepstakes {
     width: 60%; } }
 @media screen and (max-width: 640px) {
-  .hero {
-    background-image: none; }
-
   .sweepstakes {
     margin-right: 40px;
     width: 100%; }

@@ -5,8 +5,8 @@
   background-color: $brand-color-dark;
   background-image: url('../images/duraflex-bg-image.png');
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center top;
+  background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   overflow: hidden;
 }
@@ -72,29 +72,11 @@
     a:hover { color: $brand-color; }
   }
 
-@media screen and (max-width: 1700px) {
-  .hero {
-    background-size: 125%;
-    background-attachment: fixed;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .hero {
-    background-position: left center;
-    background-size: 160%;
-  }
-}
-
 @media screen and (max-width: 1290px) {
   .sweepstakes { width: 45%; }
 }
 
 @media screen and (max-width: 1024px) {
-  .hero {
-    background-position: left top;
-    background-size: 160%;
-  }
   .sweepstakes {
     margin-left: $spacing-unit;
     padding: ($spacing-unit / 2) 0;
@@ -103,7 +85,6 @@
 }
 
 @media screen and (max-width: 960px) {
-  .hero { background-size: 160%; }
   .sweepstakes__headline {
     top: 5px;
     font-size: 1.25em;
@@ -131,7 +112,6 @@
 }
 
 @media screen and (max-width: 640px) {
-    .hero { background-image: none; }
     .sweepstakes {
       margin-right: $spacing-unit;
       width: 100%;
